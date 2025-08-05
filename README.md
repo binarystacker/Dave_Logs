@@ -39,6 +39,8 @@ the use or other dealings in the software.
 
 > \* works on terminals that offer support for emoji and eoloring.
 
+### What Dave Logs is not
+Dave Logs is not a full logging framework with a persistent layer and is not to be used as such. Instead it is a dev-time debugging logs injection system which later can cleanly and throughly be stripped later for your release builds. see note under the [Customization Tips](#customization-tips) section (specifically subsection `log to permanent file`)
 
 ## Quick Demo
 ```cpp
@@ -178,7 +180,7 @@ Dave Logs is a near header-only utility with minimal setup and zero dependencies
 
 **Step 1:** Clone/Download Dave Logs 
 ```bash
-git clone https://github.com/binarystacker/dave_logs.git
+git clone https://github.com/binarystacker/Dave_Logs.git
 ```
 **Step 2:** Copy the directory src/dave_logs from the cloned repository
 ```
