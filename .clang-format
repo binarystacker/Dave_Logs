@@ -1,0 +1,49 @@
+BasedOnStyle: Google
+
+# Indentation Formats
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+ConstructorInitializerIndentWidth: 4
+AccessModifierOffset: -2
+IndentPPDirectives: BeforeHash
+
+# Line Width
+ColumnLimit: 90
+
+# Line break formats
+AllowShortEnumsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+
+AlwaysBreakTemplateDeclarations: true
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+Cpp11BracedListStyle: false
+
+BinPackArguments: true   
+BinPackParameters: true
+
+# Brace Breaking Rules
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: false
+  BeforeElse: true    
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false 
+
+DerivePointerAlignment: false
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+
+# Header Grouping Rule
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex:           '^<.*>$'      # stl headers first
+    Priority:        1
+  - Regex:           '.*'          # project headers next
+    Priority:        2                    
+  - Regex:           '^"(libtorrent)'  # 3rd parties last
+    Priority:        3
